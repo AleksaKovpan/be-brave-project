@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My project</title>
+    <style>
+      body {
+        background: linear-gradient(#247291, #f8da5b);
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 60px 40px 60px;
+        border: 1px solid rgb(113, 113, 148);
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px #e2c64b;
+      }
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        color: rgb(12, 12, 66);
+        margin-bottom: 15px;
+      }
+      hr {
+        border: none;
+        border-top: 3px double rgb(12, 12, 66);
+        color: rgb(12, 12, 66);
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 14px;
+        opacity: 0.5;
+        text-align: center;
+        font-family: monospace;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+        max-width: 100%;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 17px;
+        color: rgb(12, 12, 66);
+        font-weight: bold;
+        margin: 40px 0 30px;
+      }
+      .donation-link {
+        font-weight: bold;
+        color: red;
+        font-size: 20px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .button {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+        margin: 0 auto;
+        color: yellow;
+        padding: 20px 25px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #1a64d6;
+        border: 1px solid yellow;
+        border-radius: 30px;
+        box-shadow: 2px 5px 5px #dcd9e3;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        color: yellow;
+
+        border: 3px solid yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Be brave like Ukraine! 💙💛</h1>
+      <hr />
+      <img
+        src="https://www.chausa.org/images/default-source/prayer-photos/a-prayer-for-ukraine.jpg?sfvrsn=b71bc8f2_1"
+      />
+
+      <p>
+        Millions of Ukrainians became direct witnesses of russia's brutal war
+        against Ukraine which takes place in the center of Europe being
+        unprecedented for the entire civilized world . Every day for more than 6
+        months Ukraine has been proving out to the whole world its indomitable
+        spirit, bravery and unity. Everything that we are going through reveals
+        in Ukrainians previously unknown resources. <br /><br />
+        Why is there a very high morale and will to win in Ukrainians? Because
+        we know what we are fighting for and why. We are fighting for our land,
+        for our independence, for our freedom, for our families and we cannot be
+        defeated. <br /><br />Support the Ukrainian people, Ukrainian state and
+        Ukrainian army! You can save many lives and no matter where in the world
+        you are. Everything you need to help Ukrainians in their fight for peace
+        and freedom is a simple
+        <a
+          class="donation-link"
+          href="https://prytulafoundation.org/uk/home/support_page"
+          target="_blank"
+          >donation</a
+        >.
+      </p>
+      <button class="button">Stand with Ukraine</button>
+    </div>
+    <h2>Coded by Oleksandra Kovpan</h2>
+    <script>
+      function standWithUkraine() {
+        let answer = prompt("Are you standing with Ukraine?");
+        answer = answer.toLowerCase();
+        if (answer === "yes") {
+          alert(`💙💛 You are brave like Ukraine💙💛`);
+        }
+        if (answer === "no") {
+          alert(`💙💛 You have a chance to be brave like Ukraine💙💛`);
+        }
+      }
+      let changeAnswerButton = document.querySelector("button");
+      changeAnswerButton.addEventListener("click", standWithUkraine);
+    </script>
+  </body>
+</html>
